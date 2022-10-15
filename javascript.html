@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>Taking input from user</h1>
+
+    <form onsubmit="">
+        Num1: <input type="number" id="num1">
+        <br>
+        Num2: <input type="number" id="num2">
+        <br>
+        <button onclick="doSum()" type="submit">Do Sum</button>
+        <button onclick="doSubtract()" type="submit">Do Subtract</button>
+        <button onclick="doMulti()" type="submit">Do MULTIPLICATION</button>
+        <button onclick="doDivi()" type="submit">Do Division</button>
+    </form>
+
+    <h1 id="result"> </h1>
+
+    <h1 id="result2"> </h1>
+
+    <h1 id="result3"> </h1>
+
+    <h1 id="result4"> </h1>
+  
+
+    <script>
+
+        function doSum() {
+
+            console.log("I am doSum function running");
+
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+            let sumResult = num1 + num2;
+
+            console.log("sumResult is " + sumResult);
+
+            document.getElementById("result").innerHTML = sumResult;
+
+        }
+
+        function doSubtract() {
+
+            console.log("I am doSubtract function   running ");
+
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+            let subResult = num1 - num2;
+
+            console.log("Subtract Result " + subResult);
+
+            document.getElementById('result2').innerHTML = subResult;
+        }
+      
+
+
+        function doMulti() {
+           
+
+            console.log("I am do MULTIPLICATION function   running ");
+
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+            let multiResult = num1 * num2;
+
+            console.log("MULTIPLICATION Result " + multiResult );
+
+            document.getElementById('result3').innerHTML = multiResult;
+
+        }
+
+        function doDivi() {
+           
+
+           console.log("I am do Division function   running ");
+
+           let num10 = document.getElementById('num1').value;
+           let num2 = document.getElementById('num2').value;
+
+           num10 = Number(num1);
+           num2 = Number(num2);
+
+           let DiviResult = num1 / num2;
+
+           console.log("Division Result " + DiviResult);
+
+           document.getElementById('result4').innerHTML = DiviResult;
+
+       }
+
+    </script>
+
+</body>
+
+</html>
